@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>loginauth</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+ 
+  <ion-list>
+    <ion-item>
+      <ion-input  [(ngModel)]="email2" label="Email :" placeholder="Your email here"></ion-input>
+    </ion-item>
+ 
+    <ion-item>
+      <ion-input label="Password :" [(ngModel)]="pwd2" placeholder="Your password here"></ion-input>
+    </ion-item>
+
+
+    <ion-button expand="bottom" (click)="login()">Login</ion-button>
+    <ion-button color="medium" expand="bottom" (click)="register()">Register</ion-button>
+    </ion-list>
+</ion-content>
